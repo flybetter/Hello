@@ -5,12 +5,9 @@ spring:
   application:
     name: michael's spring boot demo
   main:
-    banner-mode: "off"
+    banner-mode: off
+  profiles:
+    active: dev
 server:
   port: 8080
-logging:
-  level:
-    root: info
-    org.springframework.web: Debug
-  file: mylog.log
-#debug: true
+
